@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Container, VStack, IconButton, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter, Button, Input, Box } from "@chakra-ui/react";
+import TitleTool from "../components/TitleTool";
 import { FaWindowMaximize, FaSearch, FaPlus } from "react-icons/fa";
 
 const Index = () => {
@@ -32,6 +33,7 @@ const Index = () => {
             {element}
           </Box>
         ))}
+        <TitleTool />
       </VStack>
 
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
